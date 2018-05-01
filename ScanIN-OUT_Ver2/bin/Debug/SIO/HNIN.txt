@@ -1,0 +1,12 @@
+#
+Barcode
+SKU
+SupplierSKU
+ItemName
+Price
+TotalQty
+Print
+QuickPrint
+PrintFormat
+Cancel
+Order#

@@ -1,0 +1,7 @@
+D:\Abdul.K\ScanIn-Out\TestProject1\bin\Debug\TestProject1.dll
+D:\Abdul.K\ScanIn-Out\TestProject1\bin\Debug\TestProject1.pdb
+D:\Abdul.K\ScanIn-Out\TestProject1\bin\Debug\SCANINOUTBL.dll
+D:\Abdul.K\ScanIn-Out\TestProject1\bin\Debug\SCANINOUTBL.pdb
+D:\Abdul.K\ScanIn-Out\TestProject1\obj\Debug\TestProject1.csprojResolveAssemblyReference.cache
+D:\Abdul.K\ScanIn-Out\TestProject1\obj\Debug\TestProject1.dll
+D:\Abdul.K\ScanIn-Out\TestProject1\obj\Debug\TestProject1.pdb

@@ -1,0 +1,14 @@
+LocalSKU
+ItemName
+Price
+Price2
+Price3
+QOH
+Integer1
+Integer2
+Integer3
+Integer4
+Integer5
+Barcode
+ReorderPoint
+Reorder Quantity

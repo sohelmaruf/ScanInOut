@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CEFAAB2-0525-46D8-A7C9-4C257C909640}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScanIn_Out</RootNamespace>
+    <AssemblyName>ScanIn-Out</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ScanIn_Out.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GenCode128">
+      <HintPath>C:\Users\Ahmed\Downloads\Compressed\GenCode128_2\GenCode128\GenCode128\bin\Debug\GenCode128.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCON.Designer.cs">
+      <DependentUpon>frmCON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDBConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDBConnection.Designer.cs">
+      <DependentUpon>frmDBConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpackinglist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpackinglist.Designer.cs">
+      <DependentUpon>frmpackinglist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintIN.Designer.cs">
+      <DependentUpon>frmPrintIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReceviedReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReceviedReport.Designer.cs">
+      <DependentUpon>frmReceviedReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRestor.designer.cs">
+      <DependentUpon>frmRestor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCON.resx">
+      <DependentUpon>frmCON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDBConnection.resx">
+      <DependentUpon>frmDBConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpackinglist.resx">
+      <DependentUpon>frmpackinglist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintIN.resx">
+      <DependentUpon>frmPrintIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReceviedReport.resx">
+      <DependentUpon>frmReceviedReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRestor.resx">
+      <DependentUpon>frmRestor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintIN.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Received_Report.rdlc" />
+    <EmbeddedResource Include="packinglist_Report.rdlc" />
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\SCANINOUTBL.InventoryRecord.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SCANINOUTBL\SCANINOUTBL.csproj">
+      <Project>{CD5E9491-FDAA-4577-AEFA-F0B03E7B511E}</Project>
+      <Name>SCANINOUTBL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+LocalSKU^100
+ItemName^100
+Price^100
+QOH^100
+Integer1^100
+Integer2^100
+Integer3^100
+Integer4^100
+Integer5^100

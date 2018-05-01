@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CF043D1-FC00-4F2F-BFDA-D430FE455FB0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScanINOUTVer2</RootNamespace>
+    <AssemblyName>ScanIN-OUT_Ver2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>inlogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GenCode128">
+      <HintPath>..\..\..\Downloads\Compressed\GenCode128_2\GenCode128\GenCode128\bin\Debug\GenCode128.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\Downloads\Compressed\itextsharp-all-5.5.3\itextsharp-dll-core\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddToPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddToPO.designer.cs">
+      <DependentUpon>frmAddToPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangeColumnHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeColumnHeader.Designer.cs">
+      <DependentUpon>frmChangeColumnHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePWD2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePWD2.Designer.cs">
+      <DependentUpon>frmChangePWD2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomizeColumnsIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomizeColumnsIN.Designer.cs">
+      <DependentUpon>frmCustomizeColumnsIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPackingListReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPackingListReport.Designer.cs">
+      <DependentUpon>frmPackingListReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePWD.Designer.cs">
+      <DependentUpon>frmChangePWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOLog.designer.cs">
+      <DependentUpon>frmPOLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOLogin.Designer.cs">
+      <DependentUpon>frmPOLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReceivedReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReceivedReport.Designer.cs">
+      <DependentUpon>frmReceivedReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchcs.Designer.cs">
+      <DependentUpon>frmSearchcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSKUList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSKUList.Designer.cs">
+      <DependentUpon>frmSKUList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplierDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplierDetails.designer.cs">
+      <DependentUpon>frmSupplierDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplierItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplierItems.designer.cs">
+      <DependentUpon>frmSupplierItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewOrder.Designer.cs">
+      <DependentUpon>frmViewOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportDataSet.cs">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UCConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCConfiguration.Designer.cs">
+      <DependentUpon>UCConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCConiction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCConiction.Designer.cs">
+      <DependentUpon>UCConiction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCreatePurchaseOrders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCreatePurchaseOrders.designer.cs">
+      <DependentUpon>UCCreatePurchaseOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCreatePurchaseOrdersIndividually.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCreatePurchaseOrdersIndividually.designer.cs">
+      <DependentUpon>UCCreatePurchaseOrdersIndividually.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDataLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDataLog.Designer.cs">
+      <DependentUpon>UCDataLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPurchaseOrders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPurchaseOrders.Designer.cs">
+      <DependentUpon>UCPurchaseOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPurchaseOrdersLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPurchaseOrdersLog.Designer.cs">
+      <DependentUpon>UCPurchaseOrdersLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCScanIN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCScanIN.Designer.cs">
+      <DependentUpon>UCScanIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCScanOUT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCScanOUT.Designer.cs">
+      <DependentUpon>UCScanOUT.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAddToPO.resx">
+      <DependentUpon>frmAddToPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeColumnHeader.resx">
+      <DependentUpon>frmChangeColumnHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePWD2.resx">
+      <DependentUpon>frmChangePWD2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomizeColumnsIN.resx">
+      <DependentUpon>frmCustomizeColumnsIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPackingListReport.resx">
+      <DependentUpon>frmPackingListReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOLog.resx">
+      <DependentUpon>frmPOLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOLogin.resx">
+      <DependentUpon>frmPOLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSKUList.resx">
+      <DependentUpon>frmSKUList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplierDetails.resx">
+      <DependentUpon>frmSupplierDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplierItems.resx">
+      <DependentUpon>frmSupplierItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewOrder.resx">
+      <DependentUpon>frmViewOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackingList_Report.rdlc" />
+    <EmbeddedResource Include="frmChangePWD.resx">
+      <DependentUpon>frmChangePWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReceivedReport.resx">
+      <DependentUpon>frmReceivedReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchcs.resx">
+      <DependentUpon>frmSearchcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Received_Report.rdlc" />
+    <EmbeddedResource Include="UCConfiguration.resx">
+      <DependentUpon>UCConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCConiction.resx">
+      <DependentUpon>UCConiction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCreatePurchaseOrders.resx">
+      <DependentUpon>UCCreatePurchaseOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCreatePurchaseOrdersIndividually.resx">
+      <DependentUpon>UCCreatePurchaseOrdersIndividually.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDataLog.resx">
+      <DependentUpon>UCDataLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPurchaseOrders.resx">
+      <DependentUpon>UCPurchaseOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPurchaseOrdersLog.resx">
+      <DependentUpon>UCPurchaseOrdersLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCScanIN.resx">
+      <DependentUpon>UCScanIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCScanOUT.resx">
+      <DependentUpon>UCScanOUT.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="inlogo.ico" />
+    <None Include="ReportDataSet.xsc">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSet.xss">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\inlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SCANINOUTBL\SCANINOUTBL.csproj">
+      <Project>{CD5E9491-FDAA-4577-AEFA-F0B03E7B511E}</Project>
+      <Name>SCANINOUTBL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

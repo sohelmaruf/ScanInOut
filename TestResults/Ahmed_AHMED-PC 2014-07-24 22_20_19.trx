@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1426cf01-58d4-4b42-8913-eb4010f67f39" name="Ahmed@AHMED-PC 2014-07-24 22:20:19" runUser="Ahmed-PC\Ahmed" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="da58315a-196a-48b4-a872-eb5b0be3d57d">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Ahmed_AHMED-PC 2014-07-24 22_20_19">
+      <DeploymentItem filename="D:\Abdul.K\ScanIn-Out\SCANINOUTBL\bin\Debug\SCANINOUTBL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-07-24T22:20:19.0788799+02:00" queuing="2014-07-24T22:20:20.0729367+02:00" start="2014-07-24T22:20:20.2159449+02:00" finish="2014-07-24T22:20:26.0642794+02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="AHMED-PC" outcome="Error" timestamp="2014-07-24T22:20:26.0622793+02:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetDataTest" storage="d:\abdul.k\scanin-out\testproject1\bin\debug\testproject1.dll" id="27658800-201f-53d1-4a35-97d28ef5aef3">
+      <Execution id="6cd957a5-a76e-42b9-b7f4-23ba78204e65" />
+      <TestMethod codeBase="D:/Abdul.K/ScanIn-Out/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.InventoryTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetDataTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="27658800-201f-53d1-4a35-97d28ef5aef3" executionId="6cd957a5-a76e-42b9-b7f4-23ba78204e65" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6cd957a5-a76e-42b9-b7f4-23ba78204e65" testId="27658800-201f-53d1-4a35-97d28ef5aef3" testName="GetDataTest" computerName="AHMED-PC" duration="00:00:05.7023261" startTime="2014-07-24T22:20:20.3619533+02:00" endTime="2014-07-24T22:20:26.0642794+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6cd957a5-a76e-42b9-b7f4-23ba78204e65">
+    </UnitTestResult>
+  </Results>
+</TestRun>
